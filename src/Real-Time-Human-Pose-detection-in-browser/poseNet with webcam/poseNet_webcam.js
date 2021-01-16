@@ -17,6 +17,8 @@ let poseNet;
 // output of our ML model is stores in this
 let poses = [];
 
+let array = []
+
 /* function setup() is by P5.js:
       it is the first function that is executed and runs only once.
       We will do our initial setup here.
@@ -80,6 +82,8 @@ function draw() {
   drawKeypoints();
   // draw the lines too.
   drawSkeleton();
+  if(poses.length!==0)
+      console.log(poses[0]['pose']['keypoints'].map( o=>[o.position.x,o.position.y]));
 }
 
 // A function to draw detected points on the image.

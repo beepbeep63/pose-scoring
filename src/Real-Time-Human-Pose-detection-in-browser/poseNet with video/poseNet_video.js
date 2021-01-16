@@ -12,9 +12,9 @@
 
 // ============= IMPORTANT ==============================
 // BELOW ARE THE VARIABLES TO CHANGE BASED ON YOUR VIDEO
-let canvas_height = 720
-let canvas_width = 1280
-let video_path = 'mj_smooth_criminal.mp4'
+let canvas_height = 1080
+let canvas_width = 1920
+let video_path = 'vid2.mp4'
 // ======================================================
 
 // variable for our video file
