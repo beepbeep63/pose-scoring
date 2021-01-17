@@ -14,7 +14,7 @@
 // BELOW ARE THE VARIABLES TO CHANGE BASED ON YOUR VIDEO
 let canvas_height = 1080
 let canvas_width = 1920
-let video_path = 'videoplayback.mp4'
+let video_path = 'vid1.mp4'
 // ======================================================
 
 // variable for our video file
@@ -79,8 +79,7 @@ function modelReady() {
 */
  function vidLoad() {
   video.loop();
-  video.volume(0);
-  video.muted(true);
+  //video.volume(0);
 }
 
 /* function draw() is by P5.js:

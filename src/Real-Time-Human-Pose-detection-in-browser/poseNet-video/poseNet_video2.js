@@ -12,8 +12,8 @@
 
 // ============= IMPORTANT ==============================
 // BELOW ARE THE VARIABLES TO CHANGE BASED ON YOUR VIDEO
-let canvas_height = 1080
-let canvas_width = 1920
+let canvas_height = 720
+let canvas_width = 1280
 let video_path = 'vid2.mp4'
 // ======================================================
 
@@ -34,6 +34,7 @@ function setup() {
          width: 640 pixels and
          height: 480 pixels
   */
+
   createCanvas(canvas_width, canvas_height);
   
   // get video and call function vidLoad when video gets loaded
@@ -79,7 +80,7 @@ function modelReady() {
 */
  function vidLoad() {
   video.loop();
-  video.volume(0);
+  //video.volume(0);
 }
 
 /* function draw() is by P5.js:
@@ -95,6 +96,8 @@ function draw() {
   drawKeypoints();
   // draw the lines too.
   drawSkeleton();
+  if(poses.length!==0)
+      console.log(poses[0]['pose']['keypoints'].map( o=>[o.position.x,o.position.y]));
 }
 
 // A function to draw detected points on the image.
