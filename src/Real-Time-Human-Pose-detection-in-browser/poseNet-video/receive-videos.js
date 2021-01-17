@@ -1,5 +1,5 @@
 const AWS = require('aws-sdk');
-const config = require('./config.json');
+//const config = require('./config.json');
 
 
  (async function() {
@@ -18,8 +18,12 @@ const config = require('./config.json');
       Bucket: 'htn2021'
     }).promise();
 
+    console.log(response);
+
 
    } catch (e){}
+
+   debugger;
 
  })();
 // var s3 = new AWS.S3();
