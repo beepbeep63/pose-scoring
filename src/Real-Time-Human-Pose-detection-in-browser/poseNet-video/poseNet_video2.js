@@ -10,13 +10,6 @@
     P5.js: for drawing and creating video output in the browser.
 */
 
-import { danceScore } from './scoring.js';
-import { create, all } from 'mathjs';
-
-const similarity = require('compute-cosine-similarity');
-const config = { };
-const math = create(all, config);
-
 // ============= IMPORTANT ==============================
 // BELOW ARE THE VARIABLES TO CHANGE BASED ON YOUR VIDEO
 let canvas_height = 1080
