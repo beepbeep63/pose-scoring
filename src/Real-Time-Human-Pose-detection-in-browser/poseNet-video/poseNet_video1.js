@@ -13,7 +13,8 @@
 // ============= IMPORTANT ==============================
 // BELOW ARE THE VARIABLES TO CHANGE BASED ON YOUR VIDEO
 let canvas_height = 720
-let canvas_width = 1020
+let canvas_width = 1280
+
 let video_path = 'vid2.mp4'
 // ======================================================
 
