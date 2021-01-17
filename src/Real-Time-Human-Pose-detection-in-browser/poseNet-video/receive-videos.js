@@ -8,8 +8,8 @@ const AWS = require('aws-sdk');
     AWS.config.setPromisesDependency();
     AWS.config.update(
       {
-        accessKeyId: "AKIAJGHNRH65ZOIUHWEA",
-        secretAccessKey: "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",
+        accessKeyId: "key",
+        secretAccessKey: "key",
         region: 'ca-central-1'
       });
 
