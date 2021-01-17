@@ -19,6 +19,7 @@ const AWS = require('aws-sdk');
     }).promise();
 
     console.log(response);
+    console.log(data);
 
 
    } catch (e){}

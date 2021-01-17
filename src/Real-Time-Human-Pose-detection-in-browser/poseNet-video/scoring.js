@@ -1,4 +1,4 @@
-import { norm } from 'mathjs'
+import { norm } from 'mathjs';
 const similarity = require('compute-cosine-similarity');
 
 function danceScore(array1, array2){
